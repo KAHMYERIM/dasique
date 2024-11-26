@@ -4,12 +4,13 @@
 .pc{display: none;}
 .m{display: block;}
 
-html{
+html, body{
     font-family: "ivypresto-headline", serif;
     font-weight: 400;
     font-size: 14px;
     color: #D37C91;
     background-color: #fff;
+    width: 100%;
 	overflow-x: hidden;
 }
 .swiper-pagination,
