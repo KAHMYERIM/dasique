@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이지크</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="96x96" href="./asset/favicon/favicon-96x96.png">
+    <!-- font -->
+    <link rel="stylesheet" href="https://use.typekit.net/phg2sbz.css">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- swiper css, 수정X-->
+    <link rel="stylesheet" href="./asset/css/font.css">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/default.css">
+    <link rel="stylesheet" href="./asset/css/tablet.css">
+    <link rel="stylesheet" href="./asset/css/desktop.css">
+    <!-- 내 css -->
+</head>
+<body>
+    <div id="wrapper">
+        <div class="bg-overlay m tab"></div>
+        <!-- header -->
+        <header>
+            <h1>
+                <a href="#">
+                    <img src="./asset/image/logo_main.png" alt="로고">
+                </a>
+            </h1><!-- /logo -->
+            <div class="btn-opn">
+                <button type="button">
+                    <!-- ::before -->
+                    <span>메뉴</span>
+                    <!-- ::after -->
+                </button>
+            </div>
+            <ul class="nav">
+                <div class="control">
+                    <div class="btn-cls">
+                        <button type="button">
+                            <!-- ::before -->
+                            <span>메뉴</span>
+                            <!-- ::after -->
+                        </button>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <div class="user-input">
+                                <input type="text" placeholder="무슨 상품을 찾아드릴까요?">
+                                <div class="btn-search-cls pc">
+                                    <button type="button">
+                                        <img src="./asset/image/btn_close.svg" alt="검색 닫기">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="btn-search">
+                                <button type="submit">
+                                    <img class="m tab" src="./asset/image/btn_search.svg"   alt="검색">
+                                    <img class="pc" src="./asset/image/btn_search.svg"   alt="검색">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="gnb">
+                    <li>
+                        <div class="tit">
+                            <a href="#">About</a>
+                            <button type="button" class="btn-more m tab">
+                                <img src="./asset/image/btn_more.png" alt="더보기">
+                            </button>
+                        </div>
+                        <ul class="sub">
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">Location</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tit">
+                            <a href="#">Shop</a>
+                            <button type="button" class="btn-more m tab">
+                                <img src="./asset/image/btn_more.png" alt="더보기">
+                            </button>
+                        </div>
+                        <ul class="sub">
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">Eye</a></li>
+                            <li><a href="#">Lip</a></li>
+                            <li><a href="#">Blush</a></li>
+                            <li><a href="#">Base</a></li>
+                            <li><a href="#">Nail</a></li>
+                        </ul>
+                    </li>
+                    <li class="m tab">
+                        <div class="tit">
+                            <a href="#">collection</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tit">
+                            <a href="#">Event</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tit">
+                            <a href="#">Community</a>
+                            <button type="button" class="btn-more m tab">
+                                <img src="./asset/image/btn_more.png" alt="더보기">
+                            </button>
+                        </div>
+                        <ul class="sub">
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul><!-- /nav -->
+            <ul class="util">
+                <li>
+                    <button type="button">
+                        <img src="./asset/image/btn_mypage.svg" alt="마이페이지">
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="./asset/image/btn_cart.svg" alt="장바구니">
+                    </button>
+                </li>
+            </ul><!-- /util -->
+        </header>
+        <!-- /header -->
+
+        <!-- main banner -->
+        <div class="swiper-container slide">
+            <div class="swiper-wrapper"> 
+                <div class="swiper-slide">
+                    <a href="#" class="slide1">
+                        <div class="title">
+                            <p class="name">My Bear Collection</p>
+                            <p class="info">
+                                어린 시절 함께한 곰인형의 포근한 무드와<br>
+                                부드러운 컬러감을 담음 마이 베어 컬렉션을 만나보세요.
+                            </p>
+                            <div class="link">
+                                Go Shop
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="slide2">
+                        <div class="title">
+                            <p class="name">Rose Milk Tea Collection</p>
+                            <p class="info">
+                                적당한 온도의 로즈빛으로 은은하게 깊어져가는 컬러<br>
+                                부드러운 밀크티에 여린 장미 꽃잎을 우려낸 듯 은은한 로즈 핑크빛 무드를  느껴보세요.
+                            </p>
+                            <div class="link">
+                                Go Shop
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+        </div><!-- /슬라이드 구문 -->
+        <!-- /main banner -->
+
+        <!-- section1 - best sellers -->
+        <section class="s1">
+            <div class="wrap">
+                <h2>
+                    <img src="./asset/image/rose_l_d.svg" alt="deco">
+                    Best Sellers
+                    <img src="./asset/image/rose_r_d.svg" alt="deco">
+                </h2>
+                <p>데이지크의 베스트 상품을 만나보세요!</p>
+                <!-- 슬라이드 구문 -->
+                <div class="swiper-container gallery">
+                    <div class="gallery_inner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">25%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/best1.jpg" alt="best1">
+                                        <img class="img-hover" src="./asset/image/best1_h.jpg" alt="best1">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">수플레 컬러 팟 15종</p>
+                                        <p class="pr-price">
+                                            <span>20,000원</span> 15,000원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/best2.jpg" alt="best2">
+                                        <img class="img-hover" src="./asset/image/best2_h.jpg" alt="best2">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">섀도우 팔레트 07 밀크 라떼</p>
+                                        <p class="pr-price">
+                                            <span>34,000원</span> 27,200원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/best3.jpg" alt="best3">
+                                        <img class="img-hover" src="./asset/image/best3_h.jpg" alt="best3">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">[마이베어 컬렉션] 섀도우 팔레트</p>
+                                        <p class="pr-price">
+                                            <span>34,000원</span> 27,200원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/best4.jpg" alt="best4">
+                                        <img class="img-hover" src="./asset/image/best4_h.jpg" alt="best4">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">[마이베어 컬렉션] 블렌딩 무드 치크</p>
+                                        <p class="pr-price">
+                                            <span>24,000원</span> 19,200원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/best5.jpg" alt="best5">
+                                        <img class="img-hover" src="./asset/image/best5_h.jpg" alt="best5">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">[마이베어 컬렉션] 무드 페인팅 립 앤치크 팔레트</p>
+                                        <p class="pr-price">
+                                            <span>32,000원</span> 25,600원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/best6.jpg" alt="best6">
+                                        <img class="img-hover" src="./asset/image/best6_h.jpg" alt="best6">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">섀도우 팔레트 27 로즈 밀크티</p>
+                                        <p class="pr-price">
+                                            <span>34,000원</span> 27,200원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 블릿 버튼 -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <!-- 화살표 버튼 -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section1 - best sellers -->
+
+        <!-- section2 - collection -->
+        <section class="s2">
+            <div class="collection1">
+                <a href="#"></a>
+                <div class="collection-info">
+                    <p>Hug my bear, your day be cozy!</p>
+                    <p>My Bear Collection</p>
+                </div>
+                <div class="collection-link">
+                    Go Shop
+                </div>
+            </div>
+            <div class="collection2">
+                <a href="#"></a>
+                <div class="collection-info">
+                    <p>The Rose Milk tea time : Mellow rosy flavor</p>
+                    <p>Rose Milk Tea Collection</p>
+                </div>
+                <div class="collection-link">
+                    Go Shop
+                </div>
+            </div>
+        </section>
+        <!-- /section2 - collection -->
+
+        <!-- section3 - new arrivals -->
+        <section class="s3">
+            <div class="wrap">
+                <h2>
+                    <img src="./asset/image/rose_l_d.svg" alt="deco">
+                    New Arrivals
+                    <img src="./asset/image/rose_r_d.svg" alt="deco">
+                </h2>
+                <p>데이지크의 새로운 상품을 만나보세요!</p>
+                <!-- 슬라이드 구문 -->
+                <div class="swiper-container gallery">
+                    <div class="gallery_inner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/new1.jpg" alt="new1">
+                                        <img class="img-hover" src="./asset/image/new1_h.jpg" alt="new1">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">[마이베어 컬렉션] 무드 페인팅 립 앤치크 팔레트</p>
+                                        <p class="pr-price">
+                                            <span>32,000원</span> 25,600원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/new2.jpg" alt="new2">
+                                        <img class="img-hover" src="./asset/image/new2_h.jpg" alt="new2">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">[마이베어 컬렉션] 섀도우 팔레트</p>
+                                        <p class="pr-price">
+                                            <span>34,000원</span> 27,200원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/new3.jpg" alt="new3">
+                                        <img class="img-hover" src="./asset/image/new3_h.jpg" alt="new3">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">[마이베어 컬렉션] 블렌딩 무드 치크</p>
+                                        <p class="pr-price">
+                                            <span>24,000원</span> 19,200원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/new4.jpg" alt="new4">
+                                        <img class="img-hover" src="./asset/image/new4_h.jpg" alt="new4">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">블렌딩 무드 치크 15 로즈 밀크티</p>
+                                        <p class="pr-price">
+                                            <span>24,000원</span> 19,200원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">20%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/new5.jpg" alt="new5">
+                                        <img class="img-hover" src="./asset/image/new5_h.jpg" alt="new5">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">섀도우 팔레트 27 로즈 밀크티</p>
+                                        <p class="pr-price">
+                                            <span>34,000원</span> 27,200원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="sale">30%</div>
+                                    <div class="img-box">
+                                        <img class="img" src="./asset/image/new6.jpg" alt="new6">
+                                        <img class="img-hover" src="./asset/image/new6_h.jpg" alt="new6">
+                                    </div>
+                                    <div class="best-product">
+                                        <p class="pr-name">[로즈밀크티 컬렉션] 쥬시 듀이 틴트</p>
+                                        <p class="pr-price">
+                                            <span>17,000원</span> 11,900원
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 블릿 버튼 -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <!-- 화살표 버튼 -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section3 - new arrival -->
+
+        <!-- section4 - dasique pick -->
+        <section class="s4">
+            <div class="wrap">
+                <h2>
+                    <img src="./asset/image/rose_l_d.svg" alt="deco">
+                    dasique Pick!
+                    <img src="./asset/image/rose_r_d.svg" alt="deco">
+                </h2>
+                <p>데이지크에서 추천하는 믿고 쓰는 상품들!</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="screen">
+                                <div class="top">
+                                    섀도우 팔레트 13 쿨 블렌딩
+                                </div>
+                                <div class="img-box">
+                                    <img class="img" src="./asset/image/pick1.jpg" alt="pick1">
+                                    <img class="img-hover" src="./asset/image/pick1_h.jpg" alt="pick1">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="screen">
+                                <div class="top">
+                                    스탈릿 쥬얼 리퀴드 글리터
+                                </div>
+                                <div class="img-box">
+                                    <img class="img" src="./asset/image/pick2.jpg" alt="pick2">
+                                    <img class="img-hover" src="./asset/image/pick2_h.jpg" alt="pick2">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="talk1 tab pc">
+                    <img src="./asset/image/talk01.png" alt="talk1">
+                </div>
+                <div class="talk2 tab pc">
+                    <img src="./asset/image/talk02.png" alt="talk2">
+                </div>
+            </div>
+        </section>
+        <!-- /section4 - dasique pick -->
+
+        <!-- section5 - event -->
+        <section class="s5">
+            <div class="wrap">
+                <h2 class="tab pc">
+                    <img src="./asset/image/rose_l_d.svg" alt="deco">
+                    Event
+                    <img src="./asset/image/rose_r_d.svg" alt="deco">
+                </h2>
+                <p class="tab pc">데이지크만의 특별한 이벤트를 만나보세요.</p>
+                <div class="swiper-container event">
+                    <div class="event_inner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/event1.jpg" alt="event1"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/event2.jpg" alt="event2"></a>
+                            </div>
+                        </div>
+                        <!-- 블릿 버튼 -->
+                        <div class="swiper-pagination tab pc"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section5 - event -->
+
+        <!-- section6 - instagram -->
+        <section class="s6">
+            <div class="wrap">
+                <h2>
+                    <img src="./asset/image/rose_l_d.svg" alt="deco">
+                    Instagram
+                    <img src="./asset/image/rose_r_d.svg" alt="deco">
+                </h2>
+                <p>데이지크 소식을 가장 빠르게 만나보세요.</p>
+                <!-- 슬라이드 구문 1 -->
+                <div class="swiper-container flowslide1">
+                    <div class="flowslide_inner1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins1.jpg" alt="갤러리1"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins2.jpg" alt="갤러리2"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins3.jpg" alt="갤러리3"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins4.jpg" alt="갤러리4"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins5.jpg" alt="갤러리5"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins6.jpg" alt="갤러리6"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins7.jpg" alt="갤러리7"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /슬라이드 구문 1 -->
+                <!-- 슬라이드 구문 2 -->
+                <div class="swiper-container flowslide2">
+                    <div class="flowslide_inner2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins8.jpg" alt="갤러리8"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins9.jpg" alt="갤러리9"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins10.jpg" alt="갤러리10"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins11.jpg" alt="갤러리11"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins12.jpg" alt="갤러리12"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins13.jpg" alt="갤러리13"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./asset/image/ins14.jpg" alt="갤러리14"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /슬라이드 구문 2 -->
+            </div>
+        </section>
+        <!-- /section6 - instagram -->
+
+        <!-- footer -->
+        <footer>
+            <div class="wrap">
+                <div class="inner">
+                    <div class="inner1">
+                        <a href="#">
+                            <img src="./asset/image/logo_wh.png" alt="로고">
+                        </a>
+                        <div class="p1">
+                            <p><span>02-6959-3877</span></p>
+                            <p>10:00 - 17:00 (점심시간 12:30 - 13:30, SAT, SUN OFF)</p>
+                        </div>
+                        <p>기업은행 588-036269-04-017 주식회사 데이지크</p>
+                    </div>
+                    <div class="inner2">
+                        <p>COMPANY <span>(주)데이지크</span></p>
+                        <p>BUSINESS NO.  <span>769-86-01723</span></p>
+                        <p>ONLINE-ORDER NO. <span>2020-서울강남-02057</span></p>
+                        <p>ADDRESS <span>서울특별시 강남구 테헤란로 513, 4층(삼성동, K타워)</span></p>
+                        <p>CS문의 <span>cs@dasique.com</span></p>
+                        <p>DOMESTIC SALES <span>md@dasique.com</span></p>
+                        <p>OVERSEAS SALES <span>overseas@dasique.com</span></p>
+                        <p>MARKETING <span>marketing@dasique.com</span></p>
+                        <p>반품주소 <span>서울시 광진구 강변역로2 광진우체국 C동 3층 큐트레이딩 데이지크 TEL)02-6959-3877</span></p>
+                    </div>
+                </div>
+                <div class="inner3">
+                    <div class="inner3_sns">
+                        <a href="#">
+                            <img src="./asset/image/sns01.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/image/sns02.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/image/sns03.png" alt="">
+                        </a>
+                    </div>
+                    <p>COPYRIGHT (C) 2019 dasique ALL RIGHTS RESERVED / DESIGNED BY GA09 DESIGN</p>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!-- 상담버튼 -->
+        <a href="#" class="fix"><img src="./asset/image/fixed.png" alt="상담"></a>
+    </div>
+    <!-- /wrapper -->
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <!-- 제이쿼리 라이브러리,수정X -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- swiper js, 수정X -->
+    <script src="./asset/js/main.js"></script>
+    <!-- 내 js -->
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* TABLET.css : tablet영역 css */
+@media (min-width: 768px) {
+    .m{display: none;}
+    .pc{display: none;}
+    .tab{display: block;}
+
+    h2{
+        font-size: 28px;
+    }
+    .wrap > p{
+        font-size: 14px;
+    }
+
+    /* section1 - best seller */
+    .gallery {
+        padding: 0 28px;
+    }
+    .gallery .swiper-slide a .sale{
+        padding: 5px 9px;
+        border-radius: 11px 0px 11px 0px;
+        font-size: 17px;
+        top: 20px;
+        left: 20px;
+    }
+    .gallery .swiper-slide a .img-box .img{
+        border-radius: 30px 0px 30px 0px;
+    }
+    .gallery .swiper-slide a .img-box .img-hover{
+        border-radius: 30px 0px 30px 0px;
+    }
+    .gallery .swiper-slide a .best-product .pr-name{
+        font-size: 14px;
+    }
+    .gallery .swiper-slide a .best-product .pr-price{
+        font-size: 15px;
+    }
+    .gallery .swiper-slide a .best-product .pr-price span{
+        font-size: 12px;
+    }
+    .gallery .swiper-button-prev,
+    .gallery .swiper-button-next{
+        width: 21px;
+        height: 28px;
+    }
+    .gallery .swiper-button-prev:after,
+    .gallery .swiper-button-next:after{
+        width: 21px;
+        height: 28px;
+    }
+    .gallery .swiper-button-prev:after{
+        background-image: url(../image/prev_m.svg);
+    }
+    .gallery .swiper-button-next:after{
+        background-image: url(../image/next_m.svg);
+    }
+
+    /* section2 - collection */
+    .s2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .s2 > div > a{
+        height: 500px;
+    }
+    .s2 .collection1 .collection-info p:first-child,
+    .s2 .collection2 .collection-info p:first-child{
+        font-size: 16px;
+    }
+    .s2 .collection1 .collection-info p:last-child,
+    .s2 .collection2 .collection-info p:last-child{
+        font-size: 30px;
+    }
+
+    /* section4 - dasique Pick */
+    .s4 .wrap{
+        padding: 40px 20px 50px;
+    }
+    .s4 .wrap ul{
+        padding: 0 50px 50px;
+    }
+    .s4 .wrap ul li{
+        width: 320px;
+    }
+    .s4 .wrap ul li a .screen{
+        border-radius: 30px 0px 30px 0px;
+    }
+    .s4 .wrap ul li a .screen .top{
+        font-size: 15px;
+    }
+    .s4 .wrap .talk1{
+        width: 300px;
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+        z-index: 3;
+        object-fit: contain;
+    }
+    .s4 .wrap .talk2{
+        width: 289px;
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+        z-index: 3;
+        object-fit: contain;
+    }
+
+    /* section5 - evet */
+    .s5 .wrap{
+        padding: 30px 20px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .s5 .wrap h2{
+        display: flex;
+        gap: 4px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    .s5 .wrap h2 img{
+        width: 40px;
+    }
+    .s5 .wrap > p{
+        font-family: 'Pretendard';
+        font-weight: 400;
+        padding-bottom: 30px;
+    }
+    .event {
+        padding-bottom: 40px;
+    }
+    .event_inner {
+        border-radius: 30px 0px 30px 0px;
+    }
+
+    /* section6 - instagram */
+    .s6 .wrap{
+        padding: 0px 0px 120px;
+    }
+    .flowslide1 .swiper-slide a,
+    .flowslide2 .swiper-slide a {
+        display: block;
+        width: 240px;
+        height: 240px;
+    }
+    .flowslide1 .swiper-slide a img,
+    .flowslide2 .swiper-slide a img {
+        border-radius: 30px 0px 30px 0px;
+    }
+
+    /* footer */
+    footer{
+        font-size: 12px;
+    }
+}

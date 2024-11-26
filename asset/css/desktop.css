@@ -1,0 +1,383 @@
+@media (min-width: 1024px) {
+    /* DESKTOP.css : desktop영역 css */
+    .m{display: none;}
+    .tab{display: none;}
+    .pc{display: block;}
+
+    h2{
+        font-size: 36px;
+    }
+    .wrap > p{
+        font-size: 16px;
+        padding-bottom: 40px;
+    }
+
+    /* header */
+    header{
+        padding: 0 100px;
+    }
+    header h1{
+        position: absolute;
+    }
+    header .btn-opn{
+        display: none;
+    }
+    header .nav{
+        position: unset;
+        width: 100%;
+        height: 50px;
+        transition: unset;
+        display: flex;
+        z-index: 15;
+        justify-content: space-between;
+        background-color: unset;
+    }
+    header .nav.slide{
+        left: unset;
+    }
+    header .nav .control{
+        width: 16px;
+        height: 50px;
+        display: unset;
+        order: 2;
+        margin-right: 10px;
+        background-color: unset;
+    }
+    header .nav .control .btn-cls{
+        display: none;
+    }
+    header .nav .control .search{
+        position: relative;
+        height: 50px;
+    }
+    header .nav .control .search form .user-input{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        padding: 10px 20px;
+        background-color: #fff;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    header .nav .control .search form .user-input.show {
+        display: flex;
+        opacity: 1;
+    }
+    header .nav .control .search form .user-input input{
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #D37C91;
+        padding-left: 6px;
+        font-size: 14px;
+        color: #D37C91;
+    }
+    header .nav .control .search form .user-input input::placeholder{
+        color: #D37C91;
+    }
+    header .nav .control .search form .user-input .btn-search-cls{
+        display: flex;
+    }
+    header .nav .control .search form .user-input .btn-search-cls button{
+        width: 100%;
+        height: 100%;
+        margin-left: 10px;
+    }
+    header .nav .control .search form .user-input .btn-search-cls button img{
+        width: 16px;
+    }
+    header .nav .control .search form .btn-search{
+        display: flex;
+        align-items: center;
+    }
+    header .nav .control .search form .btn-search button{
+        width: 16px;
+        height: unset;
+        display: flex;
+    }
+    header .nav .control .search form .btn-search button img{
+        width: unset;
+        width: 16px;
+    }
+    header .nav .gnb{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 50px;
+    }
+    header .nav .gnb > li{
+        position: relative;
+        height: 50px;
+    }
+    header .nav li .tit {
+        position: unset;
+        border-bottom: unset;
+        width: 100%;
+        height: 100%;
+    }
+    header .nav .gnb > li .tit::after{
+        content: unset;
+        display: unset;
+        width: unset;
+        height: unset;
+        border-top: unset;
+        border-right: unset;
+        transform: unset;
+        position: unset;
+        transition: unset;
+    }
+    header .nav .gnb li:nth-child(3) .tit::after,
+    header .nav .gnb li:nth-child(4) .tit::after{
+        border: unset;
+    }
+    header .nav .gnb li .tit.active::after{
+        transform: unset;
+    }
+    header .nav .gnb > li .tit a{
+        padding: unset;
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+    }
+    header .nav .gnb > li:hover .tit a{
+        opacity: 0.7;
+    }
+    header .nav .gnb > li .sub{
+        background-color: #fff;
+        width: 120px;
+        padding: unset;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: unset;
+    }
+    header .nav .gnb > li .sub li{
+        width: 100%;
+    }
+    header .nav .gnb > li .sub li a{
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        color: #D37C91;
+        display: block;
+        align-items: center;
+    }
+    header .nav .gnb > li .sub li a:hover{
+        background-color: #F5EEE6;
+    }
+    header .util{
+        order: 3;
+        display: flex;
+        gap: 10px;
+    }
+
+    /* main banner */
+    .slide .swiper-slide a .title{
+        padding: 0 100px;
+    }
+    .slide .swiper-slide a {
+        height: 100vh;
+    }
+    .slide .swiper-slide a .title .name{
+        font-size: 40px;
+    }
+    .slide .swiper-slide a .title .info{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .slide .swiper-slide a .title .link{
+        font-size: 16px;
+        padding: 8px 20px 10px;
+    }
+
+    /* section1 - best seller */
+    .s1 .wrap{
+        padding: 90px 100px;
+    }
+    .gallery {
+        padding: 0 32px;
+    }
+    .gallery .swiper-slide a .img-box .img{
+        border-radius: 50px 0px 50px 0px;
+    }
+    .gallery .swiper-slide a .img-box .img-hover{
+        border-radius: 50px 0px 50px 0px;
+    }
+    .gallery .swiper-slide a .sale{
+        top: 30px;
+        left: 30px;
+    }
+    .gallery .swiper-slide a .best-product .pr-name{
+        font-size: 15px;
+    }
+    .gallery .swiper-slide a .best-product .pr-price{
+        font-size: 14px;
+    }
+    .gallery .swiper-slide a .best-product .pr-price span{
+        font-size: 12px;
+    }
+
+    /* section2 - collection */
+    .s2 > div > a{
+        height: 600px;
+    }
+    .s2 .collection1 .collection-info p:first-child,
+    .s2 .collection2 .collection-info p:first-child{
+        font-size: 17px;
+    }
+    .s2 .collection1 .collection-info p:last-child,
+    .s2 .collection2 .collection-info p:last-child{
+        font-size: 34px;
+    }
+    .s2 > div > div p{
+        padding: 0 100px;
+    }
+
+    /* section3 - new arrivals */
+    .s3 .wrap{
+        padding: 90px 100px;
+    }
+
+    /* section4 - dasique Pick */
+    .s4 .wrap {
+        padding: 60px 100px 90px;
+    }
+    .s4 .wrap ul{
+        padding: 0 80px 80px;
+    }
+    .s4 .wrap ul li{
+        width: 430px;
+    }
+    .s4 .wrap ul li a .screen{
+        border-radius: 50px 0px 50px 0px;
+    }
+    .s4 .wrap ul li a .screen .top{
+        font-size: 16px;
+        height: 100px;
+    }
+    .s4 .wrap .talk1{
+        width: 320px;
+        left: 100px;
+        bottom: 100px;
+    }
+    .s4 .wrap .talk2{
+        width: 319px;
+        right: 100px;
+        bottom: 100px;
+    }
+
+    /* section5 - evet */
+    .s5 .wrap{
+        padding: 0px 100px 90px;
+    }
+    .event_inner {
+        border-radius: 50px 0px 50px 0px;
+    }
+
+    /* section6 - instagram */
+    .s6 .wrap{
+        padding: 60px 100px 130px;
+    }
+    .flowslide1 .swiper-slide a,
+    .flowslide2 .swiper-slide a {
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+    .flowslide1 .swiper-slide a img,
+    .flowslide2 .swiper-slide a img {
+        border-radius: 50px 0px 50px 0px;
+    }
+
+    /* footer */
+    footer .wrap{
+        padding: 100px 100px;
+        flex-direction: unset;
+        gap: unset;
+    }
+    footer .wrap .inner{
+        flex-direction: unset;
+        gap: 50px;
+    }
+    footer .wrap .inner .inner1{
+        align-items: start;
+        justify-content: space-between;
+    }
+    footer .wrap .inner .inner1 .p1{
+        flex-direction: column;
+    }
+    footer .wrap .inner .inner2{
+        align-content: space-between;
+    }
+    footer .wrap .inner3{
+        gap: unset;
+        justify-content: space-between;
+        align-items: end;
+    }
+    footer .wrap .inner3 .inner3_sns{
+        gap: 10px;
+    }
+    footer .wrap .inner3 .inner3_sns a img{
+        width: 50px;
+    }
+
+    /* 상담버튼 */
+    .fix{
+        width: 80px;
+        bottom: 50px;
+        right: 50px;
+    }
+}
+
+@media (min-width: 1210px) {
+    .wrap h2 img{
+        width: 50px;
+    }
+
+    /* main banner */
+    .slide .swiper-slide .slide1{
+        background-image: url(../image/main_banner1.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slide .swiper-slide .slide2{
+        background-image: url(../image/main_banner2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slide .swiper-slide a .title .name{
+        font-size: 60px;
+    }
+
+    /* section2 - collection */
+    .s2 > div > a{
+        height: 900px;
+    }
+    .s2 .collection1 .collection-info p:last-child,
+    .s2 .collection2 .collection-info p:last-child{
+        font-size: 40px;
+    }
+    .s2 > div .collection-link{
+        font-size: 16px;
+        padding: 8px 18px 10px;
+    }
+}
+
+@media (min-width: 1320px) {
+    /* DESKTOP.css : desktop영역 css */
+    .m{display: none;}
+    .tab{display: none;}
+    .pc{display: block;}
+
+    .s4 .wrap .talk1{
+        width: 400px;
+    }
+    .s4 .wrap .talk2{
+        width: 389px;
+    }
+}
