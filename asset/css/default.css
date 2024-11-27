@@ -5,6 +5,7 @@
 .m{display: block;}
 
 html, body{
+    font-synthesis: none;
     font-family: "ivypresto-headline", serif;
     font-weight: 400;
     font-size: 14px;
