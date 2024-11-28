@@ -273,6 +273,9 @@
     .s5 .wrap{
         padding: 0px 100px 90px;
     }
+    .s5 .wrap > p{
+        padding-bottom: 40px;
+    }
     .event_inner {
         border-radius: 50px 0px 50px 0px;
     }
