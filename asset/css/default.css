@@ -704,7 +704,7 @@ footer{
     font-family: 'Pretendard';
     font-size: 10px;
     font-weight: 300;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
 }
 footer .wrap{
     padding: 100px 20px;
@@ -740,6 +740,7 @@ footer .wrap .inner .inner1 .p1{
 }
 footer .wrap .inner .inner1 .p1 span{
     font-weight: 400;
+    color: #fff;
 }
 footer .wrap .inner .inner2{
     display: flex;
@@ -749,6 +750,7 @@ footer .wrap .inner .inner2{
 }
 footer .wrap .inner .inner2 span{
     font-weight: 400;
+    color: #fff;
 }
 footer .wrap .inner3{
     display: flex;
