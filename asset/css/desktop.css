@@ -310,7 +310,7 @@
         flex-direction: column;
     }
     footer .wrap .inner .inner2{
-        align-content: space-between;
+        margin-right: 50px;
     }
     footer .wrap .inner3{
         gap: unset;
@@ -322,6 +322,9 @@
     }
     footer .wrap .inner3 .inner3_sns a img{
         width: 50px;
+    }
+    footer .wrap .inner3 p{
+        text-align: right;
     }
 
     /* 상담버튼 */
