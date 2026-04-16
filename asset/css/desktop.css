@@ -12,6 +12,170 @@
         padding-bottom: 40px;
     }
 
+    /* main banner */
+    .slide .swiper-slide a .title{
+        padding: 0 100px;
+    }
+    .slide .swiper-slide a {
+        height: 100vh;
+    }
+    .slide .swiper-slide a .title .name{
+        font-size: 60px;
+    }
+    .slide .swiper-slide a .title .info{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .slide .swiper-slide a .title .link{
+        font-size: 16px;
+        padding: 8px 20px 10px;
+    }
+
+    /* section1 - best seller */
+    .s1 .wrap{
+        padding: 90px 100px;
+    }
+    .gallery {
+        padding: 0 32px;
+    }
+    .gallery .swiper-slide a .img-box .img{
+        border-radius: 50px 0px 50px 0px;
+    }
+    .gallery .swiper-slide a .img-box .img-hover{
+        border-radius: 50px 0px 50px 0px;
+    }
+    .gallery .swiper-slide a .sale{
+        top: 30px;
+        left: 30px;
+    }
+    .gallery .swiper-slide a .best-product .pr-name{
+        font-size: 15px;
+    }
+    .gallery .swiper-slide a .best-product .pr-price{
+        font-size: 14px;
+    }
+    .gallery .swiper-slide a .best-product .pr-price span{
+        font-size: 12px;
+    }
+
+    /* section2 - collection */
+    .s2{
+        padding: 0 100px;
+    }
+    .expand-card{
+        height: 500px;
+    	border-radius: 50px 0px 50px 0px;
+	    margin-right: 15px;
+    }
+    .expand-card img{
+        width: 24px;
+    }
+    .expand-card h3{
+    	font-size: 18px;
+    }
+
+    /* section3 - new arrivals */
+    .s3 .wrap{
+        padding: 90px 100px;
+    }
+
+    /* section4 - dasique Pick */
+    .s4 .wrap {
+        padding: 60px 100px 90px;
+    }
+    .s4 .wrap ul{
+        padding: 0 80px 80px;
+    }
+    .s4 .wrap ul li{
+        width: 430px;
+    }
+    .s4 .wrap ul li a .screen{
+        border-radius: 50px 0px 50px 0px;
+    }
+    .s4 .wrap ul li a .screen .top{
+        font-size: 16px;
+        height: 100px;
+    }
+    .s4 .wrap .talk1{
+        width: 320px;
+        left: 100px;
+        bottom: 100px;
+    }
+    .s4 .wrap .talk2{
+        width: 319px;
+        right: 100px;
+        bottom: 100px;
+    }
+
+    /* section5 - evet */
+    .s5 .wrap{
+        padding: 0px 100px 90px;
+    }
+    .s5 .wrap > p{
+        padding-bottom: 40px;
+    }
+    .event_inner {
+        border-radius: 50px 0px 50px 0px;
+    }
+
+    /* section6 - instagram */
+    .s6 .wrap{
+        padding: 60px 100px 130px;
+    }
+    .flowslide1 .swiper-slide a,
+    .flowslide2 .swiper-slide a {
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+    .flowslide1 .swiper-slide a img,
+    .flowslide2 .swiper-slide a img {
+        border-radius: 50px 0px 50px 0px;
+    }
+
+    /* footer */
+    footer .wrap{
+        padding: 100px 100px;
+        flex-direction: unset;
+        gap: unset;
+    }
+    footer .wrap .inner{
+        flex-direction: unset;
+        gap: 50px;
+    }
+    footer .wrap .inner .inner1{
+        align-items: start;
+        justify-content: space-between;
+    }
+    footer .wrap .inner .inner1 .p1{
+        flex-direction: column;
+    }
+    footer .wrap .inner .inner2{
+        margin-right: 50px;
+    }
+    footer .wrap .inner3{
+        gap: unset;
+        justify-content: space-between;
+        align-items: end;
+    }
+    footer .wrap .inner3 .inner3_sns{
+        gap: 10px;
+    }
+    footer .wrap .inner3 .inner3_sns a img{
+        width: 50px;
+    }
+    footer .wrap .inner3 p{
+        text-align: right;
+    }
+
+    /* 상담버튼 */
+    .fix{
+        width: 80px;
+        bottom: 50px;
+        right: 50px;
+    }
+}
+@media (min-width: 1080px) {
     /* header */
     header{
         padding: 0 100px;
@@ -173,172 +337,9 @@
         display: flex;
         gap: 10px;
     }
-
-    /* main banner */
-    .slide .swiper-slide a .title{
-        padding: 0 100px;
-    }
-    .slide .swiper-slide a {
-        height: 100vh;
-    }
-    .slide .swiper-slide a .title .name{
-        font-size: 40px;
-    }
-    .slide .swiper-slide a .title .info{
-        font-size: 16px;
-        line-height: 20px;
-    }
-    .slide .swiper-slide a .title .link{
-        font-size: 16px;
-        padding: 8px 20px 10px;
-    }
-
-    /* section1 - best seller */
-    .s1 .wrap{
-        padding: 90px 100px;
-    }
-    .gallery {
-        padding: 0 32px;
-    }
-    .gallery .swiper-slide a .img-box .img{
-        border-radius: 50px 0px 50px 0px;
-    }
-    .gallery .swiper-slide a .img-box .img-hover{
-        border-radius: 50px 0px 50px 0px;
-    }
-    .gallery .swiper-slide a .sale{
-        top: 30px;
-        left: 30px;
-    }
-    .gallery .swiper-slide a .best-product .pr-name{
-        font-size: 15px;
-    }
-    .gallery .swiper-slide a .best-product .pr-price{
-        font-size: 14px;
-    }
-    .gallery .swiper-slide a .best-product .pr-price span{
-        font-size: 12px;
-    }
-
-    /* section2 - collection */
-    .s2 > div > a{
-        height: 600px;
-    }
-    .s2 .collection1 .collection-info p:first-child,
-    .s2 .collection2 .collection-info p:first-child{
-        font-size: 17px;
-    }
-    .s2 .collection1 .collection-info p:last-child,
-    .s2 .collection2 .collection-info p:last-child{
-        font-size: 34px;
-    }
-    .s2 > div > div p{
-        padding: 0 100px;
-    }
-
-    /* section3 - new arrivals */
-    .s3 .wrap{
-        padding: 90px 100px;
-    }
-
-    /* section4 - dasique Pick */
-    .s4 .wrap {
-        padding: 60px 100px 90px;
-    }
-    .s4 .wrap ul{
-        padding: 0 80px 80px;
-    }
-    .s4 .wrap ul li{
-        width: 430px;
-    }
-    .s4 .wrap ul li a .screen{
-        border-radius: 50px 0px 50px 0px;
-    }
-    .s4 .wrap ul li a .screen .top{
-        font-size: 16px;
-        height: 100px;
-    }
-    .s4 .wrap .talk1{
-        width: 320px;
-        left: 100px;
-        bottom: 100px;
-    }
-    .s4 .wrap .talk2{
-        width: 319px;
-        right: 100px;
-        bottom: 100px;
-    }
-
-    /* section5 - evet */
-    .s5 .wrap{
-        padding: 0px 100px 90px;
-    }
-    .s5 .wrap > p{
-        padding-bottom: 40px;
-    }
-    .event_inner {
-        border-radius: 50px 0px 50px 0px;
-    }
-
-    /* section6 - instagram */
-    .s6 .wrap{
-        padding: 60px 100px 130px;
-    }
-    .flowslide1 .swiper-slide a,
-    .flowslide2 .swiper-slide a {
-        display: block;
-        width: 300px;
-        height: 300px;
-    }
-    .flowslide1 .swiper-slide a img,
-    .flowslide2 .swiper-slide a img {
-        border-radius: 50px 0px 50px 0px;
-    }
-
-    /* footer */
-    footer .wrap{
-        padding: 100px 100px;
-        flex-direction: unset;
-        gap: unset;
-    }
-    footer .wrap .inner{
-        flex-direction: unset;
-        gap: 50px;
-    }
-    footer .wrap .inner .inner1{
-        align-items: start;
-        justify-content: space-between;
-    }
-    footer .wrap .inner .inner1 .p1{
-        flex-direction: column;
-    }
-    footer .wrap .inner .inner2{
-        margin-right: 50px;
-    }
-    footer .wrap .inner3{
-        gap: unset;
-        justify-content: space-between;
-        align-items: end;
-    }
-    footer .wrap .inner3 .inner3_sns{
-        gap: 10px;
-    }
-    footer .wrap .inner3 .inner3_sns a img{
-        width: 50px;
-    }
-    footer .wrap .inner3 p{
-        text-align: right;
-    }
-
-    /* 상담버튼 */
-    .fix{
-        width: 80px;
-        bottom: 50px;
-        right: 50px;
-    }
 }
 
-@media (min-width: 1210px) {
+@media (min-width: 1210px){
     .wrap h2 img{
         width: 50px;
     }
@@ -357,20 +358,7 @@
         background-size: cover;
     }
     .slide .swiper-slide a .title .name{
-        font-size: 60px;
-    }
-
-    /* section2 - collection */
-    .s2 > div > a{
-        height: 900px;
-    }
-    .s2 .collection1 .collection-info p:last-child,
-    .s2 .collection2 .collection-info p:last-child{
-        font-size: 40px;
-    }
-    .s2 > div .collection-link{
-        font-size: 16px;
-        padding: 8px 18px 10px;
+        font-size: 80px;
     }
 }
 

@@ -11,6 +11,11 @@
         font-size: 14px;
     }
 
+    /* main banner */
+    .slide .swiper-slide a .title .name{
+        font-size: 50px;
+    }
+
     /* section1 - best seller */
     .gallery {
         padding: 0 28px;
@@ -55,19 +60,27 @@
     }
 
     /* section2 - collection */
-    .s2{
-        grid-template-columns: 1fr 1fr;
+    .expand-card{
+        height: 450px;
+    	border-radius: 20px 0px 20px 0px;
+        flex: 3;
     }
-    .s2 > div > a{
-        height: 500px;
-    }
-    .s2 .collection1 .collection-info p:first-child,
-    .s2 .collection2 .collection-info p:first-child{
+    .expand-card h3{
+        position: absolute;
+        opacity: 0;
         font-size: 16px;
+        font-weight: 400;
     }
-    .s2 .collection1 .collection-info p:last-child,
-    .s2 .collection2 .collection-info p:last-child{
-        font-size: 30px;
+    .expand-card img{
+        position: absolute;
+        width: 28px;
+    }
+    .expand-card.active{
+    	flex: 7;
+    }
+    .expand-card.active h3{
+        opacity: 1;
+    	transition: opacity 0.4s ease-in 0.4s;
     }
 
     /* section4 - dasique Pick */

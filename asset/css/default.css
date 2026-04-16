@@ -6,8 +6,9 @@
 
 html, body{
     font-synthesis: none;
-    font-family: "ivypresto-headline", serif;
+    font-family: "ivypresto-display", serif;
     font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     color: #D37C91;
     background-color: #fff;
@@ -190,7 +191,6 @@ header .nav li .tit {
 }
 header .nav .gnb > li .tit a{
     padding: 20px 0 20px 20px;
-    font-family: "lemonde-journal", serif;
     font-size: 18px;
     width: 100%;
     color: #D37C91;
@@ -282,7 +282,7 @@ header .util li button img{
     text-align: left;
     font-size: 25px;
     text-align: center;
-    letter-spacing: 2px;
+    /* -webkit-text-stroke: 1px #B8606E; */
 }
 .slide .swiper-slide a .title .info{
     font-family: 'Pretendard';
@@ -445,84 +445,61 @@ header .util li button img{
 
 /* section2 - collection */
 .s2{
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1920px;
-    margin: 0 auto;
-}
-.s2 > div {
-    overflow: hidden;
-    position: relative;
-}
-.s2 > div > a{
-    display: block;
-    width: 100%;
-    height: 490px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all 0.3s;
-}
-.s2 > div .collection-info{
-    width: 100%;
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+    max-width: 1320px;
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-.s2 > div .collection-link{
-    position: absolute;
-    bottom: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    border-radius: 100px;
-    padding: 6px 16px 8px;
-}
-.s2 > div:first-child .collection-link{
-    border: 1px solid #62401A;
-    color: #62401A;
-}
-.s2 > div:last-child .collection-link{
-    border: 1px solid #8F4859;
-    color: #8F4859;
-}
-.s2 > div > a:hover{
-    transform: scale(1.1);
-    transition: all 0.3s;
-}
-.s2 .collection1 a{
-    background-image: url(../image/collection1.jpg);
-}
-.s2 > div > div p{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     padding: 0 20px;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
 }
-.s2 .collection1 .collection-info p:first-child{
+.expand-card{
+    height: 250px;
+	border-radius: 40px 0px 40px 0px;
+	margin-right: 10px;
+	cursor: pointer;
+	flex: 3;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all 0.7s ease-in-out;
+}
+.expand-card:nth-child(2){
+    margin-right: 0;
+}
+.expand-card .collection-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+.expand-card h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    padding: 6px 20px;
+    border-radius: 50px;
     font-size: 14px;
-    color: #62401A;
+    font-weight: 400;
 }
-.s2 .collection1 .collection-info p:last-child{
-    font-size: 24px;
-    color: #AE6F28;
-    letter-spacing: 1px;
+.expand-card h3:hover{
+    color: #D37C91;
+    border: 1px solid #fff;
+    background-color: #fff;
 }
-.s2 .collection2 a{
-    background-image: url(../image/collection2.jpg);
+.expand-card img{
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
 }
-.s2 .collection2 .collection-info p:first-child{
-    font-size: 14px;
-    color: #8F4859;
-    margin-bottom: 10px;
+.expand-card.active{
+	flex: 7;
 }
-.s2 .collection2 .collection-info p:last-child{
-    font-size: 24px;
-    color: #B8606E;
-    letter-spacing: 1px;
+.expand-card.active h3{
+	transition: opacity 0.3s ease-in 0.4s;
 }
 
 /* section3 - new arrivals */
@@ -616,6 +593,10 @@ header .util li button img{
     max-width: 1320px;
     margin: 0 auto;
 }
+.s5 .wrap h2,
+.s5 .wrap p{
+    color: #D37C91;
+}
 .event {
 	width: 100%;
 	box-sizing: border-box;
@@ -636,7 +617,7 @@ header .util li button img{
 }
 /* 블릿버튼 크기, 색상, 투명도 */
 .event .swiper-pagination-bullet {
-	background: #D37C91;
+	background: #fff;
 	width: 10px;
 	height: 10px;
 	opacity: 0.5;
@@ -664,6 +645,10 @@ header .util li button img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.s6 .wrap h2,
+.s6 .wrap p{
+    color: #D37C91;
 }
 .flowslide1,
 .flowslide2 {
@@ -812,16 +797,10 @@ footer .wrap .inner3 .inner3_sns a img{
     }
 
     /* section2 - collection */
-    .s2 > div > a{
-        height: 600px;
-    }
-    .s2 .collection1 .collection-info p:first-child,
-    .s2 .collection2 .collection-info p:first-child{
-        font-size: 18px;
-    }
-    .s2 .collection1 .collection-info p:last-child,
-    .s2 .collection2 .collection-info p:last-child{
-        font-size: 34px;
+    .expand-card{
+        height: 320px;
+	    border-radius: 40px 0px 40px 0px;
+	    margin-right: 10px;
     }
 
     /* section5 - event */
