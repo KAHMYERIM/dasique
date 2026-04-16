@@ -149,6 +149,31 @@ $(function(){
     });
 });
 
+// section2
+function slidesPlugin(activeSlide = 0) {
+	const slides = document.querySelectorAll(".expand-card");
+
+    if(slides.length === 0) return; // 요소가 없을 경우 에러 방지
+
+	slides[activeSlide].classList.add("active");
+
+	for (const slide of slides) {
+		slide.addEventListener("click", () => {
+			clearActiveClasses();
+
+			slide.classList.add("active");
+		});
+	}
+
+	function clearActiveClasses() {
+		slides.forEach((slide) => {
+			slide.classList.remove("active");
+		});
+	}
+}
+
+slidesPlugin();
+
 // section5
 $(function(){
     var swiper = new Swiper('.event_inner ', {
