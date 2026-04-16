@@ -7,7 +7,16 @@
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="96x96" href="./asset/favicon/favicon-96x96.png">
     <!-- font -->
-    <link rel="stylesheet" href="https://use.typekit.net/phg2sbz.css">
+    <script>
+        (function(d) {
+            var config = {
+                kitId: 'phg2sbz',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/   \bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement ("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+="    wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk. onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&   a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.  parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
     <!-- css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <!-- swiper css, 수정X-->
@@ -288,28 +297,20 @@
         <!-- /section1 - best sellers -->
 
         <!-- section2 - collection -->
-        <section class="s2">
-            <div class="collection1">
-                <a href="#"></a>
-                <div class="collection-info">
-                    <p>Hug my bear, your day be cozy!</p>
-                    <p>My Bear Collection</p>
+        <div class="s2 container">
+        	<div class="expand-card collection1" style="background-image: url('./asset/image/card1.jpg');">
+                <div class="collection-name">
+                    <h3 class="tab pc">View Collection</h3>
+                    <img src="./asset/image/right_icon.svg" alt="">
                 </div>
-                <div class="collection-link">
-                    Go Shop
+        	</div>
+        	<div class="expand-card collection2" style="background-image: url('./asset/image/card2.jpg');">
+                <div class="collection-name">
+        		    <h3 class="tab pc">View Collection</h3>
+                    <img src="./asset/image/right_icon.svg" alt="">
                 </div>
-            </div>
-            <div class="collection2">
-                <a href="#"></a>
-                <div class="collection-info">
-                    <p>The Rose Milk tea time : Mellow rosy flavor</p>
-                    <p>Rose Milk Tea Collection</p>
-                </div>
-                <div class="collection-link">
-                    Go Shop
-                </div>
-            </div>
-        </section>
+        	</div>
+        </div>
         <!-- /section2 - collection -->
 
         <!-- section3 - new arrivals -->
